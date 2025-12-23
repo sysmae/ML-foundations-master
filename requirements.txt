@@ -1,0 +1,15 @@
+# ML Foundations 필수 패키지
+jupyter
+numpy
+matplotlib
+scipy
+pandas
+
+# 딥러닝 프레임워크
+tensorflow
+torch
+torchvision
+
+# Jupyter 관련
+ipykernel
+notebook
