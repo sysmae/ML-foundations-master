@@ -1,62 +1,57 @@
-# 1. 개요: 행렬 연산과 머신러닝
+# 1. 개요 (Overview)
 
-## 📌 핵심 질문
+> **"선형대수학 II: 행렬 연산"**에 오신 것을 환영합니다!
 
-> "행렬을 어떻게 분해하고 변형하여 데이터의 본질을 파악할 것인가?"
-
----
-
-## 🔷 소개
-
-선형대수학 II 섹션에 오신 것을 환영합니다! 이 과정에서는 선형대수의 기초를 넘어, 머신러닝 모델이 실제로 데이터를 압축하고, 패턴을 찾고, 복잡한 시스템의 해를 구하는 데 사용하는 강력한 도구들을 배웁니다.
+이 섹션은 머신러닝, 특히 **딥러닝**의 핵심이 되는 텐서 조작(Tensor Manipulation)을 심도 있게 다룹니다.
 
 ---
 
-## 🤖 왜 선형대수학 II가 중요한가?
+## 🎯 학습 목표
 
-선형대수학 II에서 배우는 개념들은 현대 머신러닝과 딥러닝의 근간을 이룹니다.
+이 과정을 통해 여러분은 다음을 달성하게 됩니다:
 
-| 분야            | 핵심 기법             | 실제 활용 사례                                  |
-| :-------------- | :-------------------- | :---------------------------------------------- |
-| **정보 검색**   | 고유벡터(Eigenvector) | 구글의 페이지랭크 전용 알고리즘                 |
-| **추천 시스템** | 특이값 분해(SVD)      | 넷플릭스 영화 추천, 스포티파이 음악 추천        |
-| **데이터 압축** | SVD, PCA              | 유의미한 패턴을 유지하며 차원 축소              |
-| **자연어 처리** | 행렬 분해             | 토픽 모델링, 의미 분석(Semantic Analysis)       |
-| **최적화**      | 의사 역행렬           | 과결정 방정식(Overdetermined Systems) 해 구하기 |
+1.  **기하학적 직관 개발**: 머신러닝 알고리즘 내부에서 일어나는 일을 기하학적으로 이해합니다.
+2.  **ML 논문 이해**: 논문이나 고급 교재에 나오는 수식과 개념을 파악할 수 있는 능력을 기릅니다.
+3.  **차원 축소 마스터**: 고차원의 복잡한 데이터를 가장 중요한 정보만 남기고 압축하는 기술(SVD, PCA 등)을 배웁니다.
 
 ---
 
-## 📚 배울 내용 요약
+## 📚 커리큘럼 구성
 
-### 1️⃣ 기초 복습 및 심화 (Review)
+이 노트 시리즈는 크게 세 가지 세그먼트로 나뉩니다:
 
-- 텐서 조작 (NumPy, PyTorch, TensorFlow)
-- 벡터 전치(Transpose), 노름(Norm, 특히 L2)
-- 행렬 곱셈과 역행렬의 제약 조건 (정방행렬, 특이행렬 등)
+### Segment 1: 기초 선형대수 복습 (Review)
 
-### 2️⃣ 고유값 분해 (Eigen-decomposition)
+기초가 튼튼해야 멀리 갑니다. 1부 내용을 빠르게 복습하고 심화합니다.
 
-- 행렬을 고유벡터와 고유값으로 '증류(Distill)'하는 방법
-- **행렬식(Determinant)**: 행렬이 공간을 어떻게 변형시키는지 나타내는 지표
+- 벡터 전치(Transposition)와 노름(Norm)
+- 행렬 곱셈(Matrix Multiplication)과 역행렬(Inversion)
+- 특수 행렬: 단위 행렬, 대각 행렬, 직교 행렬
 
-### 3️⃣ 머신러닝을 위한 고급 연산 (ML Applications)
+### Segment 2: 고유값 분해 (Eigendecomposition)
 
-- **특이값 분해(SVD)**: 가장 유익한 요소만 남기고 차원을 줄이는 기술
-- **무어-펜로즈 역행렬(Moore-Penrose Pseudoinverse)**: 역행렬을 직접 구할 수 없는 상황(과결정 시스템)에서의 해결책
+행렬이 공간을 어떻게 변형시키는지, 그 본질을 파악합니다.
+
+- **아핀 변환(Affine Transformation)**: 회전, 크기 변환, 전단 등
+- **고유벡터(Eigenvectors)와 고유값(Eigenvalues)**
+- 행렬식(Determinants)
+
+### Segment 3: 머신러닝을 위한 행렬 연산 (ML Applications)
+
+실전 머신러닝에서 쓰이는 강력한 도구들을 다룹니다.
+
+- **특이값 분해(SVD)**: 모든 행렬을 분해하는 마법의 키
+- **무어-펜로즈 의사역행렬(Moore-Penrose Pseudoinverse)**: 해가 없는 방정식의 해를 구하기
+- **주성분 분석(PCA)**: 데이터 차원 축소의 정석
 
 ---
 
-## 🛠️ 실습 준비
+## 🛠️ 실습 환경
 
-모든 예제 코드는 다음 노트북에서 확인하고 실행해볼 수 있습니다:
+모든 예제 코드는 **Python (NumPy, PyTorch)**을 사용하여 직접 실행해볼 수 있습니다.
 
-- [2-linear-algebra-ii.ipynb](file:///Users/jinhyun/workspace/ML-foundations-master/notebooks/2-linear-algebra-ii.ipynb)
+- [원본 노트북 보기 (GitHub)](https://github.com/jonkrohn/ML-foundations/blob/master/notebooks/2-linear-algebra-ii.ipynb)
+- [Google Colab에서 실행하기](https://colab.research.google.com/github/jonkrohn/ML-foundations/blob/master/notebooks/2-linear-algebra-ii.ipynb)
 
 > [!TIP]
-> 만약 기초 개념(스칼라, 벡터, 행렬의 기본 조작)이 생소하다면, [선형대수학 I](../01-intro-to-linear-algebra/01-overview.md) 섹션을 먼저 복습하는 것을 권장합니다.
-
----
-
-## 🚀 시작하며
-
-이제 첫 번째 주제인 **기초 복습**부터 시작하여, 머신러닝의 마법 같은 연산들을 하나씩 파헤쳐 보겠습니다!
+> 눈으로만 보지 말고, 직접 코드를 치며 실행해보세요!
